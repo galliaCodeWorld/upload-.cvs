@@ -7,7 +7,7 @@ Author: Takuro Hishikawa, wokamoto
 Author URI: https://en.digitalcube.jp/
 Text Domain: rs-csv-importer
 License: GPL version 2 or later - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-Version: 0.6.3
+Version: 0.6.2
 */
 
 if ( !defined('WP_LOAD_IMPORTERS') )
@@ -23,7 +23,8 @@ if ( !class_exists( 'WP_Importer' ) ) {
 }
 
 // Load Helpers
-require dirname( __FILE__ ) . '/rs-csv-helper.php';
+require dirname( __FILE__ ) . '/class-rs_csv_helper.php';
+require dirname( __FILE__ ) . '/class-rscsv_import_post_helper.php';
 require dirname( __FILE__ ) . '/wp_post_helper/class-wp_post_helper.php';
 
 /**
